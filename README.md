@@ -1,6 +1,10 @@
 
-The personal environmental stuff of Sam S
-=========================================
+My shared dev environment for all my machines/projects
+======================================================
+
+Includes aliases for faster git, ruby-like activate.sh support, and
+some other stuff I find useful. Some of this is pretty esoteric, use
+anything you like and feel free to tell me if you do or don't!
 
 *Your mileage may vary*
 
