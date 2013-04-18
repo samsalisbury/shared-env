@@ -3,13 +3,18 @@
 [ "$OS" == "Windows_NT" ] && is_win=1 || is_win=0
 
 if [ $is_win ]; then
-    DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+    SHENV="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 else
-    DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+    SHENV="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 fi
 
-source "$DIR/aliases.sh"
+source "$SHENV/aliases.sh"
+echo "Aliases loaded, enter 'a' for details."
 
-if [ $is_win ]; then
-    source $DIR/aliases.win.sh
+if [ $is_win == 1 ]; then
+	echo 'Adding Windows aliases'
+    source "$SHENV/aliases.win.sh"
+else
+	echo 'Adding OSX aliases'
+    source "$SHENV/aliases.osx.sh"
 fi

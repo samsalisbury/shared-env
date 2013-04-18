@@ -1,5 +1,3 @@
-#!/usr/bin/bash
-
 # Universal aliases
 alias a='alias'
 alias dos2unix="perl -pi -e 's/\r\n|\n|\r/\n/g'"
@@ -28,20 +26,21 @@ alias gup='git push'
 alias glsd='git lsd'
 alias p=". $DIR/pristine.sh"
 
-alias edit='start notepad'
-alias ed='edit'
+# The alias 'editor' should be set in the OS-specific aliases.OS-ABBREV.sh
+alias e='editor'
+
 alias l='ls -la'
-alias la='. $SHENV/bash/aliases.sh'
+
+# Quickly re-load the entire shared env (bashrc.sh onwards)
+alias la='. $SHENV/bashrc.sh'
 
 # Quickly edit these aliases ... am I going too far???
-alias eda='ed $SHENV/bash/aliases.sh'
-alias edb='ed $SHENV/bash/bashrc.sh'
-alias edp='ed $SHENV/bash/pristine.sh'
-alias edrc='ed ~/.bashrc'
+alias eda='e $SHENV/aliases.sh'
+alias edb='e $SHENV/bashrc.sh'
+alias edp='e $SHENV/pristine.sh'
+alias edrc='e ~/.bashrc'
 
 alias gcp='git cherry-pick'
 alias main='start $devenv $JGREPOWIN\\Website\\Main.sln'
 alias pint='p integration'
 alias pamd='p awesome-mobile-donation'
-
-echo "Aliases loaded, enter 'a' for details."
