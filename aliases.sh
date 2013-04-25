@@ -1,6 +1,7 @@
 # Universal aliases
 alias a='alias'
 alias dos2unix="perl -pi -e 's/\r\n|\n|\r/\n/g'"
+alias c='clear'
 
 # Git aliases
 alias g='git'
@@ -13,6 +14,7 @@ alias gcl='git clean -xdfq -e "*.ReSharper.user" -e "_ReSharper.Main" -e "*.suo"
 alias gcm='git commit -m'
 alias gco='git checkout'
 alias gd='git diff'
+alias gdt='git difftool'
 alias gl='git log'
 alias gm='git merge'
 alias gmt='git mergetool'
@@ -26,6 +28,9 @@ alias gup='git push'
 alias glsd='git lsd'
 alias p=". $DIR/pristine.sh"
 
+# Heroku push
+alias guph="git push heroku master"
+
 # The alias 'editor' should be set in the OS-specific aliases.OS-ABBREV.sh
 alias e='editor'
 
@@ -36,6 +41,8 @@ alias la='. $SHENV/bashrc.sh'
 
 # Quickly edit these aliases ... am I going too far???
 alias eda='e $SHENV/aliases.sh'
+alias edaw='e $SHENV/aliases.win.sh'
+alias edao='e $SHENV/aliases.osx.sh'
 alias edb='e $SHENV/bashrc.sh'
 alias edp='e $SHENV/pristine.sh'
 alias edrc='e ~/.bashrc'
