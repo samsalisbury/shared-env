@@ -27,6 +27,7 @@ alias gs='git status'
 alias gup='git push'
 alias glsd='git lsd'
 alias p=". $DIR/pristine.sh"
+alias gcp='git cherry-pick'
 
 # Heroku push
 alias guph="git push heroku master"
@@ -47,7 +48,3 @@ alias edb='e $SHENV/bashrc.sh'
 alias edp='e $SHENV/pristine.sh'
 alias edrc='e ~/.bashrc'
 
-alias gcp='git cherry-pick'
-alias main='start $devenv $JGREPOWIN\\Website\\Main.sln'
-alias pint='p integration'
-alias pamd='p awesome-mobile-donation'
