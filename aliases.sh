@@ -13,7 +13,7 @@ alias gcam='git commit -am'
 alias gcl='git clean -xdfq -e "*.ReSharper.user" -e "_ReSharper.Main" -e "*.suo" -e "*.csproj.user" -e "*.vbproj.user" -e "*.ncrunchsolution" -e "*.ncrunchproject" -e "_NCrunch_Main"'
 alias gcm='git commit -m'
 alias gco='git checkout'
-alias gd='git diff'
+alias gd='git diff --patience'
 alias gdt='git difftool'
 alias gl='git log'
 alias gm='git merge'
@@ -36,6 +36,9 @@ alias guph="git push heroku master"
 alias e='editor'
 
 alias l='ls -la'
+
+# Relies on the pygmentize gem being available
+alias caat='pygmentize -g'
 
 # Quickly re-load the entire shared env (bashrc.sh onwards)
 alias la='. $SHENV/bashrc.sh'
