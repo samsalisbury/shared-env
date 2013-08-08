@@ -5,7 +5,9 @@
 winpath () { sh -c "(cd $1 2</dev/null && pwd -W) || echo $1 | sed 's/\\//\\\\/g;s/^\\\\\([a-z]\)\\\\/\\1:\\\\/'"; }
 
 # Editor is used for the 'e' (edit) command
-alias editor='start notepad'
+#alias editor='start notepad'
+alias editor='start "C:\\Program Files\\Sublime Text 2\\sublime_text.exe"'
+
 
 # Winsows aliases
 alias edenv='start explorer $SHENV'
@@ -19,3 +21,5 @@ function winactivate () {
 }
 
 function cd () { builtin cd "$@" && winactivate; }
+
+alias iisreset='runas /user:$USERNAME@$USERDNSDOMAIN "iisreset"'
