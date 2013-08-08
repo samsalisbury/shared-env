@@ -1,5 +1,9 @@
 #!/usr/bin/bash
 
+# Recursive globbing :)
+#shopt -s globstar
+# Doesn't work on bash 3.2 (the one that comes with OSX 10.x)
+
 [ "$OS" == "Windows_NT" ] && is_win=1 || is_win=0
 
 if [ $is_win ]; then
