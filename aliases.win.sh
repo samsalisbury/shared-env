@@ -23,3 +23,5 @@ function winactivate () {
 function cd () { builtin cd "$@" && winactivate; }
 
 alias iisreset='runas /user:$USERNAME@$USERDNSDOMAIN "iisreset"'
+JAVA_HOME='C:\\Program Files (x86)\\Java\\jre7'
+alias ec='start C:\\elasticsearch-0.90.3\\bin\\elasticsearch.bat'
