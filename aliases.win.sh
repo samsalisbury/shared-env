@@ -8,9 +8,9 @@ winpath () { sh -c "(cd $1 2</dev/null && pwd -W) || echo $1 | sed 's/\\//\\\\/g
 #alias editor='start notepad'
 alias editor='start "C:\\Program Files\\Sublime Text 2\\sublime_text.exe"'
 
-
-# Winsows aliases
+# Windows aliases
 alias edenv='start explorer $SHENV'
+alias procexp='start $SHENV\\procexp'
 
 
 function winactivate () {
