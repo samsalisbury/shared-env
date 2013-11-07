@@ -6,7 +6,9 @@ winpath () { sh -c "(cd $1 2</dev/null && pwd -W) || echo $1 | sed 's/\\//\\\\/g
 
 # Editor is used for the 'e' (edit) command
 #alias editor='start notepad'
-alias editor='start "C:\\Program Files\\Sublime Text 2\\sublime_text.exe"'
+#alias editor='"C:\\Program Files\\Sublime Text 2\\sublime_text.exe"'
+
+function editor () { start "C:\\Program Files\\Sublime Text 2\\sublime_text.exe" $1; }
 
 # Windows aliases
 alias edenv='start explorer $SHENV'
