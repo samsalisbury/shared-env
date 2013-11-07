@@ -20,6 +20,7 @@ alias gm='git merge'
 alias gmt='git mergetool'
 alias gmv='git mv'
 alias gp='git pull'
+alias gpr='git pull --rebase'
 alias gru='git remote update'
 alias gr='git reset'
 alias grh='git reset --hard'
@@ -28,6 +29,8 @@ alias gup='git push'
 alias glsd='git lsd'
 alias p=". $DIR/pristine.sh"
 alias gcp='git cherry-pick'
+# Delete all merged local branches
+alias gdm='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
 # Heroku push
 alias guph="git push heroku master"
